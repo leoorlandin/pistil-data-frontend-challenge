@@ -1,4 +1,5 @@
 import { Container } from './styles';
+import { getProducts } from '../../services/api';
 
 const HeaderComponent = () => {
   return (

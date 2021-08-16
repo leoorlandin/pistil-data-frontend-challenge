@@ -1,6 +1,6 @@
 import { Container } from './styles';
 import HeaderComponent from '../../components/HeaderComponent';
-import ProductsTableComponent from '../../components/HeaderComponent/ProductsTableComponent';
+import ProductsTableComponent from '../../components/ProductsTableComponent';
 
 const Home = () => {
   return (

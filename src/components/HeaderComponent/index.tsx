@@ -1,5 +1,6 @@
 import { KeyboardEvent, useState } from 'react';
 import { useProducts } from '../../hooks/useProducts';
+import InputComponent from '../InputComponent';
 import { Container } from './styles';
 
 const HeaderComponent = () => {
@@ -25,24 +26,22 @@ const HeaderComponent = () => {
     <Container>
       <h1>Pistil Data</h1>
       <div>
-        <input
-          type="text"
-          placeholder='Filter by strain'
-          onChange={(event) => { setFilterStrain(event.target.value) }}
-          onKeyPress={handleEnterKeyPress}
-        />
-        <input
-          type="text"
-          placeholder='Filter by strain type'
-          onChange={(event) => { setFilterStrainType(event.target.value) }}
-          onKeyPress={handleEnterKeyPress}
+        <InputComponent
+          placeHolder='Filter by strain'
+          setFilterValue={setFilterStrain}
+          handleEnterKeyPress={handleEnterKeyPress}
         />
 
-        <input
-          type="text"
-          placeholder='Filter by brand'
-          onChange={(event) => { setFilterBrand(event.target.value) }}
-          onKeyPress={handleEnterKeyPress}
+        <InputComponent
+          placeHolder='Filter by strain type'
+          setFilterValue={setFilterStrainType}
+          handleEnterKeyPress={handleEnterKeyPress}
+        />
+
+        <InputComponent
+          placeHolder='Filter by brand'
+          setFilterValue={setFilterBrand}
+          handleEnterKeyPress={handleEnterKeyPress}
         />
         <button onClick={handleFilterButton}>Filter</button>
       </div>

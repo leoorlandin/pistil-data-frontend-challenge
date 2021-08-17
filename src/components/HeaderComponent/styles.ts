@@ -5,8 +5,13 @@ export const Container = styled.div`
     min-height: 4rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: #c1c1c1;
+    justify-content: space-between;
+    background: #000;
+    padding: 0 12rem;
+
+    h1 {
+      color: #fff;
+    }
 
 
     input {
@@ -14,11 +19,18 @@ export const Container = styled.div`
       border: none;
       margin-right: .5rem;
       border-radius: 6px;
+
+      
+      &::placeholder {
+        font-weight: 800;
+      }
     }
 
     button {
       padding: .5rem 1rem;
       border: none;
       border-radius: 4px;
+      font-weight: 800;
+      background: #FFF;
     }
 `

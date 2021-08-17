@@ -16,9 +16,11 @@ export const ProductsContext = createContext<ProductsContextData>(
 
 export function ProductsProvider({ children }: ProductsProviderProps) {
   const [products, setProducts] = useState<Product[]>([]);
+  const [filterStrain, setFilterStrain] = useState('');
+
 
   useEffect(() => {
-    getProducts('Slur')
+    getProducts(filterStrain)
       .then(response => setProducts(response))
   }, []);
 

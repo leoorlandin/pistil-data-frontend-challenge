@@ -1,11 +1,20 @@
+import { useState } from 'react';
 import { Container } from './styles';
-import { getProducts } from '../../services/api';
 
 const HeaderComponent = () => {
+  const [filterStrain, setFilterStrain] = useState('');
+
   return (
     <Container>
-      <input type="text" placeholder='Filter by strain' />
-      <button>Filter</button>
+      <h1>Pistil Data</h1>
+      <div>
+        <input
+          type="text"
+          placeholder='Filter by strain'
+          onChange={(event) => { setFilterStrain(event.target.value) }}
+        />
+        <button>Filter</button>
+      </div>
     </Container>
   )
 };

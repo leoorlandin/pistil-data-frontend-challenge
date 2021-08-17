@@ -7,7 +7,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     background: #000;
-    padding: 0 12rem;
+    padding: 0 4rem;
 
     h1 {
       color: #fff;

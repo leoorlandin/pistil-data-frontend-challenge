@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
-  max-height: 20rem;
-  max-width: 14rem;
+  max-height: 26rem;
+  max-width: 18rem;
   background: #FFF;
   border-radius: 6px;
   box-shadow: 2px 2px 2px 1px rgba(60, 60, 60, 0.5);
@@ -11,6 +11,9 @@ export const Container = styled.div`
   background: #000;
   color: #fff;
   transition: transform 200ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+
 
   &:hover{
     cursor: pointer;
@@ -24,7 +27,12 @@ export const Container = styled.div`
     object-fit: fill;
   }
 
-  h2, h3 {
-    padding: .2rem;
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: .8rem;
+    margin: .5rem 0;
   }
 `

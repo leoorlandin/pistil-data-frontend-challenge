@@ -19,10 +19,10 @@ const ProductCard = ({
       </div>
       <div>
         <h2>{strain}</h2>
-        <h3>{strain_type}</h3>
-        <h3>{brand}</h3>
-        <h3>{category}</h3>
-        <h3>{weight_grams}</h3>
+        <h3>Type: {strain_type}</h3>
+        <h3>Brand: {brand}</h3>
+        <h3>Category: {category}</h3>
+        <h3>Weight: {weight_grams} grams</h3>
       </div>
     </Container>
   )

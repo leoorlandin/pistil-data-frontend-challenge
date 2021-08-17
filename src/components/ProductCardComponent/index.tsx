@@ -1,17 +1,27 @@
 import { memo } from "react";
+import { Product } from "./productInterface";
+
 import { Container } from "./styles";
 
-const ProductCard = () => {
+const ProductCard = ({
+  id,
+  brand,
+  category,
+  placeholder_img,
+  strain,
+  strain_type,
+  weight_grams
+}: Product) => {
   return (
     <Container>
       <div>
-        <img src="https://source.unsplash.com/random/800x600" alt="Product photo" />
+        <img src={placeholder_img} alt="Product photo" />
       </div>
-      <h2>products strain</h2>
-      <h3>strain type</h3>
-      <h3>brand</h3>
-      <h3>category</h3>
-      <h3>weight grams</h3>
+      <h2>{strain}</h2>
+      <h3>{strain_type}</h3>
+      <h3>{brand}</h3>
+      <h3>{category}</h3>
+      <h3>{weight_grams}</h3>
     </Container>
   )
 };

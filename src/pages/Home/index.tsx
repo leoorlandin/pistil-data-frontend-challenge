@@ -1,13 +1,16 @@
 import { Container } from './styles';
 import HeaderComponent from '../../components/HeaderComponent';
 import ProductsTableComponent from '../../components/ProductsTableComponent';
+import { ProductsProvider } from '../../hooks/useProducts';
 
 const Home = () => {
   return (
-    <Container>
-      <HeaderComponent />
-      <ProductsTableComponent />
-    </Container>
+    <ProductsProvider>
+      <Container>
+        <HeaderComponent />
+        <ProductsTableComponent />
+      </Container>
+    </ProductsProvider>
   )
 };
 

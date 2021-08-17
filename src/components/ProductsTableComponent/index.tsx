@@ -1,30 +1,15 @@
 import { useEffect, useState } from "react";
-import { getProducts } from "../../services/api";
+import { useProducts } from "../../hooks/useProducts";
 import ProductCard from "../ProductCardComponent";
-import { Product } from "../ProductCardComponent/productInterface";
 import { Container } from "./styles";
 
 const ProductsTableComponent = () => {
-  const [productsList, setProductsList] = useState<Product[]>();
-  const [strainFilter, setStrainFilter] = useState<string>('');
-
-  const handleGetProducts = async (): Promise<Product[]> => {
-    const productsList = await getProducts(strainFilter);
-
-    return productsList
-  };
-
-  useEffect(() => {
-    handleGetProducts()
-      .then(response => {
-        setProductsList(response)
-      })
-  }, []);
+  const { products } = useProducts();
 
   return (
     <Container>
 
-      {productsList?.map(product => (
+      {products?.map(product => (
         <ProductCard
           key={product.id}
           id={product.id}

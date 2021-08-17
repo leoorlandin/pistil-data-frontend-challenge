@@ -8,9 +8,20 @@ export const api = axios.create({
 
 
 export const getProducts = async (
-  strain: any
+  strain: string,
+  strainType: string
 ): Promise<Product[]> => {
-  const products = api.get(`products?strain_like=${strain}&_page=0&_limit=12`)
+  let url = `products?_page=0`
+
+  if (strain) {
+    url += `&strain=${strain}`
+  } if (strainType) {
+    url += `&strain_type=${strainType}`
+  }
+
+  const products = api.get(
+    url
+  )
     .then(response => {
       return response.data
     })

@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# Pistil Data - Frontend Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <p align="center">
+    <img alt="Repository languages count" src="https://img.shields.io/github/languages/top/leoorlandin/pistil-data-frontend-challenge?color=%#7BE0D9">
+    <img alt="Repository top language" src="https://img.shields.io/github/languages/count/leoorlandin/pistil-data-frontend-challenge?color=%#7BE0D9">
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/leoorlandin/pistil-data-frontend-challenge?color=%#7BE0D9">
+    <img alt="Repository last commit" src="https://img.shields.io/github/last-commit/leoorlandin/pistil-data-frontend-challenge?color=%#7BE0D9" />
+  </p>
+</div>
 
-## Available Scripts
+## About This Project
 
-In the project directory, you can run:
+This project is a challenge proposed by the company Pistil Data to apply for a position as a frontend developer.
 
-### `yarn start`
+The application consists of a web page that loads a list of products with their respective characteristics. It is also possible to filter these products by: strain, strain type and brand.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Below you can see the application without inserting any filter and also inserting filter in the three available fields.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+<image src="screenshots/SCREENSHOT_1" width="100%" />
+<image src="screenshots/SCREENSHOT_2" width="100%" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Running it locally
 
-### `yarn build`
+### Getting the server
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+first, you will need to make the backend run on your computer. To do this, go to this link and clone the repository [pistil-data-fake-api](https://github.com/leoorlandin/pistil-data-fake-api)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After that run:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Run `yarn` to install the dependecies;
+2. Run `yarn start` to run projecto (it will be running on port 1922).
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### With the server running, perform the following steps
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+To see the application you can check the first link above, but if you want, you can also run it locally by following the steps:
+1. Run `yarn` to install the dependecies;
+2. Run `yarn start` to run projecto (it will be running on port 3000).

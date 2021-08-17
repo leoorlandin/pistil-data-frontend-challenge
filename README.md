@@ -18,8 +18,9 @@ The application consists of a web page that loads a list of products with their 
 Below you can see the application without inserting any filter and also inserting filter in the three available fields.
 
 
-<image src="screenshots/SCREENSHOT_1" width="100%" />
-<image src="screenshots/SCREENSHOT_2" width="100%" />
+<image src="screenshots/all_results.jpg" width="100%" />
+---
+<image src="screenshots/filter_request.jpg" width="100%" />
 
 ## Running it locally
 
@@ -39,3 +40,5 @@ After that run:
 To see the application you can check the first link above, but if you want, you can also run it locally by following the steps:
 1. Run `yarn` to install the dependecies;
 2. Run `yarn start` to run projecto (it will be running on port 3000).
+
+## Technology choices

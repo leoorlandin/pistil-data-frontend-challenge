@@ -19,7 +19,7 @@ export const Container = styled.div`
       border: none;
       margin-right: .5rem;
       border-radius: 6px;
-
+      outline: none;
       
       &::placeholder {
         font-weight: 800;
@@ -32,5 +32,10 @@ export const Container = styled.div`
       border-radius: 4px;
       font-weight: 800;
       background: #FFF;
+      transition: filter 200ms ease-in-out;
+
+      &:hover {
+        filter: brightness(.8);
+      }
     }
 `

@@ -8,6 +8,7 @@ interface ProductsProviderProps {
 
 interface ProductsContextData {
   products: Product[],
+  setStrain: any
 }
 
 export const ProductsContext = createContext<ProductsContextData>(
@@ -16,17 +17,19 @@ export const ProductsContext = createContext<ProductsContextData>(
 
 export function ProductsProvider({ children }: ProductsProviderProps) {
   const [products, setProducts] = useState<Product[]>([]);
-  const [filterStrain, setFilterStrain] = useState('');
-
+  const [strain, setStrain] = useState('');
 
   useEffect(() => {
-    getProducts(filterStrain)
+    getProducts(strain)
       .then(response => setProducts(response))
-  }, []);
+  }, [strain]);
 
   return (
     <ProductsContext.Provider
-      value={{ products }}
+      value={{
+        products,
+        setStrain
+      }}
     >
       {children}
     </ProductsContext.Provider>

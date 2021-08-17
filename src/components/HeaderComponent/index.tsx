@@ -1,8 +1,21 @@
 import { useState } from 'react';
+import { useProducts } from '../../hooks/useProducts';
 import { Container } from './styles';
 
 const HeaderComponent = () => {
   const [filterStrain, setFilterStrain] = useState('');
+  const { setStrain } = useProducts();
+
+
+  const handleFilterButton = () => {
+    setStrain(filterStrain)
+  };
+
+  function handleEnterKeyPress(event: any) {
+    if (event.key === 'Enter') {
+      handleFilterButton();
+    }
+  };
 
   return (
     <Container>
@@ -12,8 +25,9 @@ const HeaderComponent = () => {
           type="text"
           placeholder='Filter by strain'
           onChange={(event) => { setFilterStrain(event.target.value) }}
+          onKeyPress={handleEnterKeyPress}
         />
-        <button>Filter</button>
+        <button onClick={handleFilterButton}>Filter</button>
       </div>
     </Container>
   )

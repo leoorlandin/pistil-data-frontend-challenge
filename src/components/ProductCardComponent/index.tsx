@@ -17,11 +17,13 @@ const ProductCard = ({
       <div>
         <img src={placeholder_img} alt="Product photo" />
       </div>
-      <h2>{strain}</h2>
-      <h3>{strain_type}</h3>
-      <h3>{brand}</h3>
-      <h3>{category}</h3>
-      <h3>{weight_grams}</h3>
+      <div>
+        <h2>{strain}</h2>
+        <h3>{strain_type}</h3>
+        <h3>{brand}</h3>
+        <h3>{category}</h3>
+        <h3>{weight_grams}</h3>
+      </div>
     </Container>
   )
 };

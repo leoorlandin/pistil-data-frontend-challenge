@@ -6,9 +6,10 @@ import { Container } from "./styles";
 
 const ProductsTableComponent = () => {
   const [productsList, setProductsList] = useState<Product[]>();
+  const [strainFilter, setStrainFilter] = useState<string>('');
 
   const handleGetProducts = async (): Promise<Product[]> => {
-    const productsList = await getProducts();
+    const productsList = await getProducts(strainFilter);
 
     return productsList
   };

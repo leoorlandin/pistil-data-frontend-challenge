@@ -42,3 +42,20 @@ To see the application you can check the first link above, but if you want, you 
 2. Run `yarn start` to run projecto (it will be running on port 3000).
 
 ## Technology choices
+
+The main technologies used in the application are: React, TypeScript and Styled Components. they were chosen to complement each other. All this in to keep code readable and easy to maintain.
+
+## Tech Debits / Improvements
+
+- My priority in this application was to deliver the api response and create at least three accumulative filters using react's contextApi.
+
+- Unfortunately based on the time I chose to take the challenge, I couldn't implement all of the suggested features.
+
+
+- Based on that if, if I had more time to continue with the challenge, I would definitely focus on finishing all the proposed functionalities.
+
+- After that I would spend some time improving the written code. In order to facilitate future necessary maintenance.
+
+- Some code that was done in the final hours got a little more "raw", e.g the api methods. So this is a code example that I would definitely rewrite if I had more time.
+
+- I would also take the time to write tests for the application and use StoryBook to create documentation for what was implemented.
